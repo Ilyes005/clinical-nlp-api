@@ -37,29 +37,48 @@ through a REST API built with FastAPI.
     │   └── test_api.py
     └── README.md
 
+
 ## Installation
 
-Clone the repository and navigate to the project folder.
+Clone the repository:
+
+```bash
+git clone https://github.com/Ilyes005/clinical-nlp-api.git
+cd clinical-nlp-api
+```
 
 Create a virtual environment:
 
-    python -m venv .venv
+```powershell
+python -m venv .venv
+```
 
-Activate it on Windows:
+Activate it on Windows PowerShell:
 
-    .venv\Scripts\activate
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
 
 Install dependencies:
 
-    python -m pip install -r requirements.txt
+```powershell
+python -m pip install -r requirements.txt
+```
+
+
 
 ## Run the API
 
-    python -m uvicorn api:app --reload
+Start the server:
 
-Open the interactive documentation:
+```powershell
+python -m uvicorn api:app --reload
+```
+
+Open the interactive API documentation:
 
 http://127.0.0.1:8000/docs
+
 
 ## Example Request
 
